@@ -7,8 +7,8 @@
   <body>
     <div ng-controller="sample">
       <form name="Form" action=".">
-        <div ng-show="Form.data[0][title].$error.required">必須です</div>
-        <div ng-show="Form.data[0][title].$error.maxlength">最大255文字です</div>
+        <div ng-show="Form['data[0][title]'].$error.required">必須です</div>
+        <div ng-show="Form['data[0][title]'].$error.maxlength">最大255文字です</div>
         <input type="text" name="data[0][title]" ng-model="data[0][title]" ng-required="true" ng-maxlength="255">
       </form>
     </div>
